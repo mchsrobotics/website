@@ -10,35 +10,42 @@
   </title>
   
   <head>
-  
-    <h1>
-      MCHS Robotics  
-    </h1>
-    
-    <h2>
-      FTC Robotics Team #5135
-    </h2>
-    
-    <h3>
-      Mount Carmel HS, San Diego, California
-    </h3>
-    
-    <h4>
-    
-    </h4>
-    
-    <h5>
-    
-    </h5>
-    
-    <h6>
-    
-    </h6>
-  
+    <script>
+      function show(elementID) {
+        var ele = document.getElementById(elementID);
+        if (!ele) {
+          alert("No such element")
+          return;
+        }
+        var pages = document.getElementsByClassName('page');
+        for(var i = 0; i < pages.length; i++) {
+          pages[i].style.display = 'none';
+        }
+        ele.style.display = 'block';
+      }
+      
+    </script>
   </head>
   
   <body>
-  
+    <h1>
+      <span onclick="show('page1');">About</span>
+      <span onclick="show('page2');">News</span>
+      <span onclick="show('page3');">Information</span>
+    </h1>
+    
+    <div id="page1" class="page" style="">
+      <h1>this is page 1</h1>
+    </div>
+    
+    <div id="page2" class="page" style="">
+      <h1>this is page 2</h1>
+    </div>
+    
+    <div id="page3" class="page" style="">
+      <h1>this is page 3</h1>
+    </div>
+    
   </body>
 
 </html>
