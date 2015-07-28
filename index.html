@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <script>
+      function show(elementID) {
+        var ele = document.getElementById(elementID);
+        if (!ele) {
+          alert("No such element")
+          return;
+        }
+        var pages = document.getElementsByClassName('page');
+        for(var i = 0; i < pages.length; i++) {
+          pages[i].style.display = 'none';
+        }
+        ele.style.display = 'block';
+      }
+      
+    </script>
     <meta charset="utf-8"
     <title></title>
   </head>
@@ -10,13 +25,16 @@
     <h2>FTC #5135 Team Uncopywrightable</h2>
     </header>
     <nav>
-      Home <br>
-      Information <br>
-      Roster <br>
-      Calender <br>
-      Links <br>
+        <span onclick="show('page1');">About</span><br>
+      <span onclick="show('page2');">News</span><br>
+      <span onclick="show('page3');">Information</span><br>
+    
+              <span onclick="show('page4');">Roster</span><br>
+    
+              <span onclick="show('page5');">Links</span><br>
     </nav>
     <section>
+        <div id = page1 class = page>
    Welcome to the website of the Mount Carmel HS Robotics Club. We are an FTC team
 based out of San Diego, California, and have competed annually in our local FTC
 Competition for four years. We use a combination of programming and design work 
@@ -25,18 +43,23 @@ yearly global competition. For more information about our club, click on the sid
 links, or view news and challenge updates below. Contact information for both the
 team leaders and the web designers are on the left in case you have any questions
 about either the club or FTC.
+        </div>
+        <div id = page2 class = page>
+            page2 homeboy
+        </div>
+        <div id = page3 class = page>
+            page 3 homeboy
+        </div>
+        <div id = page4 class = page>
+            <h3>Team Organization</h3><br>
+            At Team Uncopywrightable, we believe that, due to larger size of our team than many of our competitiors, that having every member specialize in a specific field is most efficient, so that we don't have a large amount of our members unable to work. We divide into a build team and and a programming team, with some members opting for more specialized roles such as Design. We also have a seperate organizational system for the team as a club, and have a Logistics, PR, and IT team. Our leadership structure consists of officers in charge of both parts of the team and parts of the club. Below, we have a list of the elected officers, and a short description of each position.
+        </div>
+        <div id = page5 class = page>
+            page 5 homeboy
+        </div>
     </section>
     <article>
     
     </article>
     <aside>
-    <h2>Contact Information:</h2>
-    Main Team EMail: teamuncopywrightable@gmail.com <br><br>
-    Webmaster EMail: owenpage@protonmail.ch <br><br>
-     
-    </aside>
-    <footer>
-      
-    </footer>
-  </body>
-</html>
+    <h2>Contact Informa
