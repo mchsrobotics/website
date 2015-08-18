@@ -1,65 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <script>
-      function show(elementID) {
-        var ele = document.getElementById(elementID);
-        if (!ele) {
-          alert("No such element")
-          return;
-        }
-        var pages = document.getElementsByClassName('page');
-        for(var i = 0; i < pages.length; i++) {
-          pages[i].style.display = 'none';
-        }
-        ele.style.display = 'block';
-      }
-      
-    </script>
-    <meta charset="utf-8"
-    <title></title>
+<!-- Credits to jinteki.industries for most of the code, I just edited it slightly -->
+<html><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>
+      MCHS Robotics
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="Cyberlife.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="icon"
+      type="image/x-icon"
+      href="./images/favicon.ico">
   </head>
   <body>
-    <header>
-     <h1>MCHS Robotics</h1>
-    <h2>FTC #5135 Team Uncopywrightable</h2>
-    </header>
+
+  <div id="container">
+  <div id="banner">
+  </div>
+  <div id="navigator">
     <nav>
-        <span onclick="show('page1');">About</span><br>
-      <span onclick="show('page2');">News</span><br>
-      <span onclick="show('page3');">Information</span><br>
-    
-              <span onclick="show('page4');">Roster</span><br>
-    
-              <span onclick="show('page5');">Links</span><br>
+        <b><a href="./index.html">Home</a></b>
+		<a href="./information.html">Information</a>
+        <a href="./roster.html">Roster</a>
+        <a href="./events.html">Events</a>
+        <a href="./links.html">Links</a>
     </nav>
-    <section>
-        <div id = page1 class = page>
-   Welcome to the website of the Mount Carmel HS Robotics Club. We are an FTC team
-based out of San Diego, California, and have competed annually in our local FTC
-Competition for four years. We use a combination of programming and design work 
-to build a robot which competes against other schools and organizations in a 
-yearly global competition. For more information about our club, click on the side
-links, or view news and challenge updates below. Contact information for both the
-team leaders and the web designers are on the left in case you have any questions
-about either the club or FTC.
-        </div>
-        <div id = page2 class = page>
-            page2 homeboy
-        </div>
-        <div id = page3 class = page>
-            page 3 homeboy
-        </div>
-        <div id = page4 class = page>
-            <h3>Team Organization</h3><br>
-            At Team Uncopywrightable, we believe that, due to larger size of our team than many of our competitiors, that having every member specialize in a specific field is most efficient, so that we don't have a large amount of our members unable to work. We divide into a build team and and a programming team, with some members opting for more specialized roles such as Design. We also have a seperate organizational system for the team as a club, and have a Logistics, PR, and IT team. Our leadership structure consists of officers in charge of both parts of the team and parts of the club. Below, we have a list of the elected officers, and a short description of each position.
-        </div>
-        <div id = page5 class = page>
-            page 5 homeboy
-        </div>
-    </section>
-    <article>
-    
-    </article>
-    <aside>
-    <h2>Contact Informa
+  </div>
+    <div id="main">
+  <h2>
+    Welcome to the website of MCHS Robotics!
+  </h2>
+  <p><i>Welcome to the website of MCHS Robotics, an FTC team based out of Mount Carmel High School, in San Diego, California.
+  Using a multitude of both building and programming skills, we construct a robot that competes against other robots made <body>
+  schools and organizations also participating in the competition. For more information about our club, click on the information
+  tab above. For a list of our current roster, including our student and adult leaders with relevant contact information, click
+  on the roster tab. For a list of upcoming events, click on the events tab. For more about FTC, and links to FTC and other
+  robotics information, click on links. If you have any further questions, email the webmaster at "owenpage@protonmail.ch".
+  </body></i></p>
+
+</body></html>
